@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maitree&display=swap');
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+html {
+  font-size: 0.0652vw;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    font-family: 'Lora', serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+html {
+  font-size: 0,0652vw;
+}
+
+.parliament__COMTEHNO {
+    background-color: #4A7A75;
+}
+.parliament__COMTEHNO__sub {
+    max-width: 1200rem;
+    margin: auto;
+}
+.parliament__COMTEHNO__sub h3 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 71rem;
+    line-height: 91rem;
+    display: flex;
+    justify-content: end;
+
+    color: #FFFFFF;
+    filter: blur(1rem);
+}
+
+.parliament__conteiner {
+    background-color: #F5F5F5;
+    padding-top: 101rem;
+}
+.parliament__conteiner__sub {
+    max-width: 1200rem;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15rem;
+
+    margin-bottom: 90rem;
+}
+.parliament__gallery {
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+.parliament__gallery__sub {
+    padding-left: 5rem;
+    max-width:80rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.parliament__gallery__sub img {
+    margin-bottom: 28rem;
+    max-width: 75rem;
+    box-shadow: 7rem 7rem 0rem 0rem #47736f
+}
+.parliament__conteiner__name-group img {
+    max-width: 607rem;
+    height: auto;
+
+    box-shadow: -20rem -17rem 0rem 4rem #92ADAA;
+    margin: 37rem 0rem 0rem 41rem;
+}
+.parliament__conteiner__name-group h3 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40rem;
+    line-height: 51rem;
+
+    color: #000000;
+    padding-top: 15rem;
+}
+.parliament__conteiner__name-group p {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21rem;
+    line-height: 27rem;
+
+    color: #000000;
+    padding-left: 180rem;
+}
+.parliament__blok h1 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 124rem;
+    line-height: 159rem;
+
+    color: #000000;
+    margin-bottom: 58rem;
+}
+.parliament__blok p {
+    padding-left: 43rem;
+    font-family: 'Ledger';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36rem;
+    line-height: 50rem;
+}
+
+.parliament__bottom__sub {
+    display: flex;
+    justify-content: start;
+}
+
+@media all and (max-width: 1024px) {
+    .parliament__conteiner__sub {
+        max-width: 1200rem;
+        margin: auto;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+    
+        margin-bottom: 90rem;
+    }
+
+    .parliament__blok h1 {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 124rem;
+        line-height: 159rem;
+    
+        color: #000000;
+        margin-bottom: 10rem;
+    }
+
+    .parliament__conteiner__name-group {
+        margin-bottom: 30rem;
+    }
+    .parliament__conteiner__name-group img {
+        max-width: 100%;
+    
+        box-shadow: -20rem -17rem 0rem 4rem #92ADAA;
+    }
+
+    .parliament__conteiner__name-group h3 {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60rem;
+        line-height: 51rem;
+    
+        color: #000000;
+        padding-top: 15rem;
+        margin-bottom: 10rem;
+    }
+    .parliament__conteiner__name-group p {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32rem;
+        line-height: 27rem;
+    
+        color: #000000;
+        padding-left: 260rem;
+    }
+
+    .parliament__gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parliament__gallery__sub {
+        display: flex;
+        flex-wrap: nowrap;
+
+        margin-top: 30rem;
+    }
+    .parliament__gallery__sub img {
+        margin-right: 15rem;
+        max-width: 185rem;
+        box-shadow: 7rem 7rem 0rem 0rem #47736f;
+    }
+}
